@@ -245,8 +245,8 @@ class _MyHomePageState extends State<MyHomePage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 Container(
-                                  height: 180,
-                                  width: 180,
+                                  height: 160,
+                                  width: 160,
                                   decoration: BoxDecoration(
                                     image: DecorationImage(
                                       fit: BoxFit.cover,
@@ -322,10 +322,14 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                     SizedBox(width: 20),
-                    Text(
-                      "炎",
-                      style: TextStyle(
-                        fontSize: 20,
+                    Container(
+                      width: 175,
+                      child: Text(
+                        "炎",
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                        overflow: TextOverflow.ellipsis,
                       ),
                     ),
                   ],
